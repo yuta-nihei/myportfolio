@@ -8,19 +8,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
+    <header class="header">
+        <nav class="header__nav">
+            <div class="header__logo">
                 <a href="index.html">Portfolio</a>
             </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" class="active">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
+            <ul class="header__nav-links">
+                <li class="header__nav-item"><a href="index.html">Home</a></li>
+                <li class="header__nav-item"><a href="about.html" class="header__nav-link--active">About</a></li>
+                <li class="header__nav-item"><a href="portfolio.html">Portfolio</a></li>
+                <li class="header__nav-item"><a href="contact.html">Contact</a></li>
             </ul>
-            <div class="mobile-nav">
-                <div class="hamburger">
+            <div class="header__mobile-nav">
+                <div class="header__hamburger">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -28,58 +28,58 @@
             </div>
         </nav>
     </header>
-    <div class="nav-overlay"></div>
+    <div class="header__overlay"></div>
 
-    <main>
-        <section class="about-section">
-            <div class="about-content">
-                <div class="profile-image">
-                    <img src="images/profile-image.webp" alt="Profile Picture">
+    <main class="main">
+        <section class="about">
+            <div class="about__content">
+                <div class="about__image">
+                    <img src="images/profile-image.webp" alt="Profile Picture" class="about__img">
                 </div>
-                <div class="about-text">
-                    <h1>About Me</h1>
-                    <p>Hello! I'm a passionate developer with a strong background in web development. I love creating beautiful and functional websites that provide great user experiences.</p>
+                <div class="about__text">
+                    <h1 class="about__title">About Me</h1>
+                    <p class="about__description">Hello! I'm a passionate developer with a strong background in web development. I love creating beautiful and functional websites that provide great user experiences.</p>
                     
-                    <h2>Skills</h2>
-                    <div class="skills-grid">
-                        <div class="skill-item">
+                    <h2 class="about__subtitle">Skills</h2>
+                    <div class="about__skills">
+                        <div class="about__skill-item">
                             <i class="fab fa-html5"></i>
-                            <span>HTML5</span>
+                            <span class="about__skill-name">HTML5</span>
                         </div>
-                        <div class="skill-item">
+                        <div class="about__skill-item">
                             <i class="fab fa-css3-alt"></i>
-                            <span>CSS3</span>
+                            <span class="about__skill-name">CSS3</span>
                         </div>
-                        <div class="skill-item">
+                        <div class="about__skill-item">
                             <i class="fab fa-js"></i>
-                            <span>JavaScript</span>
+                            <span class="about__skill-name">JavaScript</span>
                         </div>
-                        <div class="skill-item">
+                        <div class="about__skill-item">
                             <i class="fab fa-react"></i>
-                            <span>React</span>
+                            <span class="about__skill-name">React</span>
                         </div>
                     </div>
 
-                    <h2>Experience</h2>
-                    <div class="experience-item">
-                        <h3>Web Developer</h3>
-                        <p class="company">ideal okinawa</p>
-                        <p class="date">2022 - Present</p>
-                        <p>Description of responsibilities and achievements</p>
+                    <h2 class="about__subtitle">Experience</h2>
+                    <div class="about__experience">
+                        <h3 class="about__job-title">Web Developer</h3>
+                        <p class="about__company">ideal okinawa</p>
+                        <p class="about__date">2022 - Present</p>
+                        <p class="about__job-description">Description of responsibilities and achievements</p>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <div class="social-links">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__social-links">
+                <a href="https://github.com/yourusername" class="footer__social-link" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.tiktok.com/@yourusername" class="footer__social-link" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.facebook.com/yourusername" class="footer__social-link" target="_blank"><i class="fab fa-facebook"></i></a>
             </div>
-            <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+            <p class="footer__copyright">&copy; 2024 My Portfolio. All rights reserved.</p>
         </div>
     </footer>
     <script src="js/navigation.js"></script>

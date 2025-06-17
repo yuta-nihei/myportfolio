@@ -8,19 +8,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
+    <header class="header">
+        <nav class="header__nav">
+            <div class="header__logo">
                 <a href="index.html">Portfolio</a>
             </div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
+            <ul class="header__nav-links">
+                <li class="header__nav-item"><a href="index.html" class="header__nav-link--active">Home</a></li>
+                <li class="header__nav-item"><a href="about.html">About</a></li>
+                <li class="header__nav-item"><a href="portfolio.html">Portfolio</a></li>
+                <li class="header__nav-item"><a href="contact.html">Contact</a></li>
             </ul>
-            <div class="mobile-nav">
-                <div class="hamburger">
+            <div class="header__mobile-nav">
+                <div class="header__hamburger">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -28,60 +28,60 @@
             </div>
         </nav>
     </header>
-    <div class="nav-overlay"></div>
+    <div class="header__overlay"></div>
 
-    <main>
+    <main class="main">
         <section class="hero">
-            <div class="hero-content">
-                <h1>Welcome to My Portfolio</h1>
-                <p>I'm a passionate developer creating amazing digital experiences</p>
-                <a href="portfolio.html" class="cta-button">View My Work</a>
+            <div class="hero__content">
+                <h1 class="hero__title">Welcome to My Portfolio</h1>
+                <p class="hero__text">I'm a passionate developer creating amazing digital experiences</p>
+                <a href="portfolio.html" class="hero__cta">View My Work</a>
             </div>
         </section>
 
         <section class="profile">
-            <div class="profile-content">
-                <div class="profile-image">
-                    <img src="images/profile-image.webp" alt="Profile">
+            <div class="profile__content">
+                <div class="profile__image">
+                    <img src="images/profile-image.webp" alt="Profile" class="profile__img">
                 </div>
-                <div class="profile-text">
-                    <h2>About Me</h2>
-                    <p>I'm a passionate developer creating amazing digital experiences</p>
-                    <a href="about.html" class="cta-button">Learn More</a>
+                <div class="profile__text">
+                    <h2 class="profile__title">About Me</h2>
+                    <p class="profile__description">I'm a passionate developer creating amazing digital experiences</p>
+                    <a href="about.html" class="profile__cta">Learn More</a>
                 </div>
             </div>
         </section>
 
-        <section class="featured-projects">
-            <h2>Featured Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <img src="https://placehold.co/600x400" alt="Project 1">
-                    <h3>Project 1</h3>
-                    <p>Description of project 1</p>
+        <section class="projects">
+            <h2 class="projects__title">Featured Projects</h2>
+            <div class="projects__grid">
+                <div class="projects__card">
+                    <img src="https://placehold.co/600x400" alt="Project 1" class="projects__image">
+                    <h3 class="projects__card-title">Project 1</h3>
+                    <p class="projects__card-description">Description of project 1</p>
                 </div>
-                <div class="project-card">
-                    <img src="https://placehold.co/600x400" alt="Project 2">
-                    <h3>Project 2</h3>
-                    <p>Description of project 2</p>
+                <div class="projects__card">
+                    <img src="https://placehold.co/600x400" alt="Project 2" class="projects__image">
+                    <h3 class="projects__card-title">Project 2</h3>
+                    <p class="projects__card-description">Description of project 2</p>
                 </div>
-                <div class="project-card">
-                    <img src="https://placehold.co/600x400" alt="Project 3">
-                    <h3>Project 3</h3>
-                    <p>Description of project 3</p>
+                <div class="projects__card">
+                    <img src="https://placehold.co/600x400" alt="Project 3" class="projects__image">
+                    <h3 class="projects__card-title">Project 3</h3>
+                    <p class="projects__card-description">Description of project 3</p>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <div class="social-links">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__social-links">
+                <a href="https://github.com/yourusername" class="footer__social-link" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.tiktok.com/@yourusername" class="footer__social-link" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.facebook.com/yourusername" class="footer__social-link" target="_blank"><i class="fab fa-facebook"></i></a>
             </div>
-            <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+            <p class="footer__copyright">&copy; 2024 My Portfolio. All rights reserved.</p>
         </div>
     </footer>
     <script src="js/navigation.js"></script>

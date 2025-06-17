@@ -8,19 +8,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
+    <header class="header">
+        <nav class="header__nav">
+            <div class="header__logo">
                 <a href="index.html">Portfolio</a>
             </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html" class="active">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
+            <ul class="header__nav-links">
+                <li class="header__nav-item"><a href="index.html">Home</a></li>
+                <li class="header__nav-item"><a href="about.html">About</a></li>
+                <li class="header__nav-item"><a href="portfolio.html" class="header__nav-link--active">Portfolio</a></li>
+                <li class="header__nav-item"><a href="contact.html">Contact</a></li>
             </ul>
-            <div class="mobile-nav">
-                <div class="hamburger">
+            <div class="header__mobile-nav">
+                <div class="header__hamburger">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -28,56 +28,56 @@
             </div>
         </nav>
     </header>
-    <div class="nav-overlay"></div>
+    <div class="header__overlay"></div>
 
-    <main>
-        <section class="portfolio-section">
-            <h1>My Projects</h1>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <img src="https://placehold.co/600x400" alt="Project 1">
-                    <div class="portfolio-overlay">
-                        <h3>Project 1</h3>
-                        <p>Web Development</p>
-                        <a href="#" class="portfolio-link">View Details</a>
+    <main class="main">
+        <section class="portfolio">
+            <h1 class="portfolio__title">My Projects</h1>
+            <div class="portfolio__grid">
+                <div class="portfolio__item">
+                    <img src="https://placehold.co/600x400" alt="Project 1" class="portfolio__image">
+                    <div class="portfolio__overlay">
+                        <h3 class="portfolio__item-title">Project 1</h3>
+                        <p class="portfolio__item-category">Web Development</p>
+                        <a href="#" class="portfolio__link">View Details</a>
                     </div>
                 </div>
-                <div class="portfolio-item">
-                    <img src="https://placehold.co/600x400" alt="Project 2">
-                    <div class="portfolio-overlay">
-                        <h3>Project 2</h3>
-                        <p>Mobile App</p>
-                        <a href="#" class="portfolio-link">View Details</a>
+                <div class="portfolio__item">
+                    <img src="https://placehold.co/600x400" alt="Project 2" class="portfolio__image">
+                    <div class="portfolio__overlay">
+                        <h3 class="portfolio__item-title">Project 2</h3>
+                        <p class="portfolio__item-category">Mobile App</p>
+                        <a href="#" class="portfolio__link">View Details</a>
                     </div>
                 </div>
-                <div class="portfolio-item">
-                    <img src="https://placehold.co/600x400" alt="Project 3">
-                    <div class="portfolio-overlay">
-                        <h3>Project 3</h3>
-                        <p>UI/UX Design</p>
-                        <a href="#" class="portfolio-link">View Details</a>
+                <div class="portfolio__item">
+                    <img src="https://placehold.co/600x400" alt="Project 3" class="portfolio__image">
+                    <div class="portfolio__overlay">
+                        <h3 class="portfolio__item-title">Project 3</h3>
+                        <p class="portfolio__item-category">UI/UX Design</p>
+                        <a href="#" class="portfolio__link">View Details</a>
                     </div>
                 </div>
-                <div class="portfolio-item">
-                    <img src="https://placehold.co/600x400" alt="Project 4">
-                    <div class="portfolio-overlay">
-                        <h3>Project 4</h3>
-                        <p>E-commerce</p>
-                        <a href="#" class="portfolio-link">View Details</a>
+                <div class="portfolio__item">
+                    <img src="https://placehold.co/600x400" alt="Project 4" class="portfolio__image">
+                    <div class="portfolio__overlay">
+                        <h3 class="portfolio__item-title">Project 4</h3>
+                        <p class="portfolio__item-category">E-commerce</p>
+                        <a href="#" class="portfolio__link">View Details</a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <div class="social-links">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__social-links">
+                <a href="https://github.com/yourusername" class="footer__social-link" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.tiktok.com/@yourusername" class="footer__social-link" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.facebook.com/yourusername" class="footer__social-link" target="_blank"><i class="fab fa-facebook"></i></a>
             </div>
-            <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+            <p class="footer__copyright">&copy; 2024 My Portfolio. All rights reserved.</p>
         </div>
     </footer>
     <script src="js/navigation.js"></script>
