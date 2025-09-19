@@ -1,32 +1,26 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const hamburger = document.querySelector('.header__hamburger');
-    const navLinks = document.querySelector('.header__nav-links');
+document.addEventListener('DOMContentLoaded', () => {
     const navItems = document.querySelectorAll('.header__nav-links a');
-    const overlay = document.querySelector('.header__overlay');
+    const bottomNavLinks = document.querySelectorAll('.bottom-nav__link');
+    const currentPage = (() => {
+        const path = window.location.pathname.split('/').pop();
+        return path === '' ? 'index.html' : path;
+    })();
 
-    if (hamburger && navLinks && overlay) {
-        hamburger.addEventListener('click', function() {
-            this.classList.toggle('active');
-            navLinks.classList.toggle('active');
-            overlay.classList.toggle('active');
-            document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
-        });
-
-        overlay.addEventListener('click', function() {
-            hamburger.classList.remove('active');
-            navLinks.classList.remove('active');
-            this.classList.remove('active');
-            document.body.style.overflow = '';
-        });
-    }
-
-    // ナビゲーションリンクのクリックイベント
-    navItems.forEach(item => {
-        item.addEventListener('click', () => {
-            hamburger.classList.remove('active');
-            navLinks.classList.remove('active');
-            overlay.classList.remove('active');
-            document.body.style.overflow = '';
-        });
+    navItems.forEach(link => {
+        const href = link.getAttribute('href');
+        if (href === currentPage) {
+            link.classList.add('header__nav-link--active');
+        } else {
+            link.classList.remove('header__nav-link--active');
+        }
     });
-}); 
+
+    bottomNavLinks.forEach(link => {
+        const href = link.getAttribute('href');
+        if (href === currentPage) {
+            link.classList.add('bottom-nav__link--active');
+        } else {
+            link.classList.remove('bottom-nav__link--active');
+        }
+    });
+});
